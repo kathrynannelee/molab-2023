@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Page 2'/>
-        <page name='Page 1'/>
+        <page name='Day0'/>
+        <page name='Day1'/>
+        <page name='Day2'/>
+        <page name='Checkpoint1'/>
     </pages>
 </playground>

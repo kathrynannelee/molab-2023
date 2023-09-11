@@ -54,3 +54,8 @@ print(counter)
 
 print(120.isMultiple(of: 3))
 
+//decimal numbers, or floating point numbers
+let double1 = 3.1
+let double2 = 3131.3131
+let double3 = 3.0
+let int1 = 3
