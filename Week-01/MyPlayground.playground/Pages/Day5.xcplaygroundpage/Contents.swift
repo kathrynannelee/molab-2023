@@ -34,11 +34,6 @@ if numbers.count > 3 {
     numbers.remove(at: 0)
 }
 
-//boolean
-if username.isEmpty == true {
-    username = "Anonymous"
-}
-
 // Display the result
 print(numbers)
 
@@ -55,18 +50,18 @@ if a {
 }
 
 //switch statements to be exhaustive
-switch forecast {
-case .sun:
-    print("It should be a nice day.")
-case .rain:
-    print("Pack an umbrella.")
-case .wind:
-    print("Wear something warm")
-case .snow:
-    print("School is cancelled.")
-case .unknown:
-    print("Our forecast generator is broken!")
-}
+//switch forecast {
+//case .sun:
+//    print("It should be a nice day.")
+//case .rain:
+//    print("Pack an umbrella.")
+//case .wind:
+//    print("Wear something warm")
+//case .snow:
+//    print("School is cancelled.")
+//case .unknown:
+//    print("Our forecast generator is broken!")
+//}
 
 //ternary condition
 let hour = 23
