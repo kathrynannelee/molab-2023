@@ -28,7 +28,7 @@ let image = renderer.image { context in
     context.stroke(rt)
 
     let gray = 0.8
-    UIColor(red: gray, green: gray, blue:gray, alpha: 1.0).setFill();
+    UIColor(red: 0.5, green: gray, blue:gray, alpha: 1.0).setFill();
     context.fill(rt)
     
     flowerFaceImg.draw(in: CGRect(x: 0, y: 0, width: 500, height: 500))
