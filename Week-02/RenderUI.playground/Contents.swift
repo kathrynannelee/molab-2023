@@ -1,32 +1,41 @@
 import UIKit
+// Read in an image from a url string
+func imageFor(_ str: String) -> UIImage {
+    let url = URL(string: str)
+    let imgData = try? Data(contentsOf: url!)
+    let uiImage = UIImage(data:imgData!)
+    return uiImage!
+}
 
-let sz = CGSize(width: 200, height: 100)
+let sz = CGSize(width: 1024, height: 1024)
 let renderer = UIGraphicsImageRenderer(size: sz)
 
-let image = renderer.image { context in
-    
-    UIColor.red.setFill()
-    context.fill(CGRect(x: 0, y: 0, width: 50, height: 50))
-    UIColor.green.setFill()
-    context.fill(CGRect(x: 50, y: 0, width: 50, height: 50))
-    UIColor.yellow.setFill()
-    context.fill(CGRect(x: 100, y: 0, width: 50, height: 50))
-    UIColor.black.setFill()
-    context.fill(CGRect(x: 150, y: 0, width: 50, height: 50))
+let flowerFace = "https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f636/u1f636_u1f490.png?fbx"
+let flowerFaceImg = imageFor(flowerFace)
 
+let starSparkle = "https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f496/u1f496_u2b50.png?fbx"
+let starSparkleImg = imageFor(starSparkle)
+
+let fortuneGoat = "https://www.gstatic.com/android/keyboard/emojikitchen/20210831/u1f410/u1f410_u1f52e.png?fbx"
+let fortuneGoatImg = imageFor(fortuneGoat)
+
+let shockedPumpkin = "https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f62e/u1f62e_u1f383.png?fbx"
+let shockedPumpkinImg = imageFor(shockedPumpkin)
+
+let image = renderer.image { context in
     UIColor.darkGray.setStroke()
-    context.stroke(renderer.format.bounds)
-    
-    var rt = renderer.format.bounds
-    rt = rt.insetBy(dx: 4, dy: 4)
+    let rt = renderer.format.bounds
     context.stroke(rt)
 
-    for _ in 1...3 {
-        rt = rt.insetBy(dx: 4, dy: 4)
-        context.stroke(rt)
-    }
-//    UIColor(red: 158/255, green: 215/255, blue: 245/255, alpha: 1).setFill()
+    let gray = 0.8
+    UIColor(red: gray, green: gray, blue:gray, alpha: 1.0).setFill();
+    context.fill(rt)
     
+    flowerFaceImg.draw(in: CGRect(x: 0, y: 0, width: 500, height: 500))
+    fortuneGoatImg.draw(in: CGRect(x: 500, y: 0, width: 500, height: 500))
+    starSparkleImg.draw(in: CGRect(x: 500, y: 500, width: 500, height: 500))
+    shockedPumpkinImg.draw(in: CGRect(x: 0, y: 500, width: 500, height: 500))
+
 }
 
 image
