@@ -36,6 +36,7 @@ print(luckyNumbersSorted)
 let numbersFiltered = luckyNumbersSorted.filter { $0 % 2 != 0 }
 print(numbersFiltered)
 
-//let isALuckyNumber = numbersFiltered.map { " \$0  is a lucky number" }
-//
-//print(isALuckyNumber)
+numbersFiltered.map{print($0, "is a lucky number")}
+
+
+    
