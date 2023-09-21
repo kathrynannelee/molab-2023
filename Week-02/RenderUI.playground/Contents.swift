@@ -1,3 +1,6 @@
+
+// https://www.google.com/search?q=emojikitchen
+
 import UIKit
 // Read in an image from a url string
 func imageFor(_ str: String) -> UIImage {
