@@ -15,9 +15,6 @@ func pickRandomInt() -> Int{
     var randomInt = Int.random(in: 0...10)
     return randomInt
 }
-
-//var autumnEmojis = ["🎃", "🧣", "🍎", "🍂"]
-
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -44,9 +41,9 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             
             Text(letters[pickRandomInt()])                .font(.largeTitle)
-            Image(systemName: sfSymbols[pickRandomInt()])
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            //Image(systemName: sfSymbols[pickRandomInt()])
+               // .imageScale(.large)
+               // .foregroundColor(.accentColor)
 
         }
         .padding()
