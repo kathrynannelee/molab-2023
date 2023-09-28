@@ -31,7 +31,7 @@ struct ContentView: View {
         VStack {
             Text("Explore all the Seasons!").font(.largeTitle)
             HStack{
-                Text(season[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
                 Text(season[pickRandomInt()]).font(.title)
                 Text(season[pickRandomInt()]).font(.title)
                 Text(season[pickRandomInt()]).font(.title)
