@@ -14,6 +14,8 @@ let summer = ["🐚", "☀️", "🏖️", "🏕️", "🩴"]
 let autumn = ["🎃", "🧣", "🍎", "🍂", "🍁"]
 let winter = ["❄️", "🥶", "🧤", "🧦", "☃️"]
 
+let year = [spring, summer, autumn, winter]
+
 func pickRandomInt() -> Int{
     let randomInt = Int.random(in: 0...4)
     return randomInt
@@ -31,7 +33,7 @@ struct ContentView: View {
         VStack {
             Text("Explore all the Seasons!").font(.largeTitle)
             HStack{
-                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+//                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
                 Text(season[pickRandomInt()]).font(.title)
                 Text(season[pickRandomInt()]).font(.title)
                 Text(season[pickRandomInt()]).font(.title)
