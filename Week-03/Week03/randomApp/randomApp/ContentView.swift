@@ -23,45 +23,54 @@ func pickRandomInt() -> Int{
 
 var season = spring
 
-func pickRandomSeason() -> String{
+func pickRandomSeason() -> [String]{
     let randomSeason = Int.random(in: 0...3)
-    return seasons[randomSeason]
+    return year[randomSeason]
 }
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Explore all the Seasons!").font(.largeTitle)
+            Text("Explore all the Seasons!").font(.largeTitle).foregroundColor(.blue)
             HStack{
-//                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
-                Text(season[pickRandomInt()]).font(.title)
-                Text(season[pickRandomInt()]).font(.title)
-                Text(season[pickRandomInt()]).font(.title)
-                Text(season[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
             }
             HStack{
-                Text(summer[pickRandomInt()]).font(.title)
-                Text(summer[pickRandomInt()]).font(.title)
-                Text(summer[pickRandomInt()]).font(.title)
-                Text(summer[pickRandomInt()]).font(.title)
-                Text(summer[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
             }
             HStack{
-                Text(autumn[pickRandomInt()]).font(.title)
-                Text(autumn[pickRandomInt()]).font(.title)
-                Text(autumn[pickRandomInt()]).font(.title)
-                Text(autumn[pickRandomInt()]).font(.title)
-                Text(autumn[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
             }
             HStack{
-                Text(winter[pickRandomInt()]).font(.title)
-                Text(winter[pickRandomInt()]).font(.title)
-                Text(winter[pickRandomInt()]).font(.title)
-                Text(winter[pickRandomInt()]).font(.title)
-                Text(winter[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
             }
+            HStack{
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+                Text(pickRandomSeason()[pickRandomInt()]).font(.title)
+            }
+            Text("Can you find five in a row?")
+                .font(.title).foregroundColor(.green)
         }
-        .padding().foregroundColor(.blue)
+        .padding()
     }
 }
 
