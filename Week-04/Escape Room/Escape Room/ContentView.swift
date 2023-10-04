@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currentDate = Date.now
+    @State var timeRemaining = 60
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
         VStack {
-            Text("\(currentDate)")
-                .onReceive(timer) { input in
-                    currentDate = input
-                }
+            Text("\(timeRemaining)")
+                .font(.title)
+                .fontWeight(.heavy)
+                .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                .onReceive(timer) { _ in
+                            if timeRemaining > 0 {
+                                timeRemaining -= 1
+                            }
+                        }
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
