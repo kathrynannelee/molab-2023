@@ -63,12 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				7B36A8D22ACD1AB100B39531 /* LandmarksApp.swift */,
-				7B36A8D42ACD1AB100B39531 /* ContentView.swift */,
 				7B729E842ACE2095003CA31B /* Landmark.swift */,
 				7B729E862ACE2288003CA31B /* Data.swift */,
-				7B729E802ACE0497003CA31B /* MapView.swift */,
 				7B36A8D62ACD1AB300B39531 /* Assets.xcassets */,
-				7B729E7E2ACE008D003CA31B /* CircleImage.swift */,
+				7B729E8C2ACE2EEE003CA31B /* Views */,
 				7B36A8D82ACD1AB300B39531 /* Preview Content */,
 			);
 			path = Landmarks;
@@ -80,6 +78,16 @@
 				7B36A8D92ACD1AB300B39531 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B729E8C2ACE2EEE003CA31B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B36A8D42ACD1AB100B39531 /* ContentView.swift */,
+				7B729E802ACE0497003CA31B /* MapView.swift */,
+				7B729E7E2ACE008D003CA31B /* CircleImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
