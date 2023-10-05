@@ -18,6 +18,10 @@ struct Page3: View {
                 .fontWeight(.heavy)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
                 .onReceive(timer) { _ in
+                    //trying to create a case in which the timer displays a message when the timer ends
+                    if timeRemaining == 0 {
+                        print("too late! time is up")
+                    }
                     if timeRemaining > 0 {
                         timeRemaining -= 1
                     }
@@ -31,7 +35,7 @@ struct Page3: View {
                         }
                     }
                 }
-                .navigationTitle("Pick a Door...")
+                .navigationTitle("Pick a Door...Any Door!")
             }
         }
     }
