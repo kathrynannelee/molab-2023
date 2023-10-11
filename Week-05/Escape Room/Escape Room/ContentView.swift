@@ -22,18 +22,27 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 30) {
-                Text("You're going to flip a coin – do you want to choose heads or tails?")
-                
-                NavigationLink(destination: ResultView(choice: "Heads")) {
-                    Text("Choose Heads")
+            VStack{
+                List{
+                    NavigationLink(destination: ResultView(choice: "Tails")) {
+                        Text("Choose Tails")
                 }
-                
-                NavigationLink(destination: ResultView(choice: "Tails")) {
-                    Text("Choose Tails")
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "Heads")) {Text("Choose Heads")
+                            }
+            
+                    }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "Heads")) {Text("Choose Heads")}
+                  }
+            }
+            
+            VStack(spacing: 30) {
+                Text("...Any Door!")
                 }
             }
-            .navigationTitle("Navigation")
+            
+            .navigationTitle("Pick a Door")
             
             //Text("\(timeRemaining)")
             //.font(.title)
