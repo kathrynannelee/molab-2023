@@ -18,11 +18,31 @@ struct ResultView: View {
 struct ContentView: View {
     @State private var isShowingDetailView = false
     @State var timeRemaining = 60
+    @AppStorage("username") var username: String = "Anonymous"
+    @AppStorage("score") var score:Int = 0
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         NavigationView {
             VStack{
+                Text("Welcome, \(username)")
+                HStack {
+                    Button("Log in") {
+                        username = "someone"
+                    }
+                    Button("Log out") {
+                        username = "Anonymous"
+                    }
+                }
+                Text("Score \(score)")
+                HStack {
+                    Button("+ Store ") {
+                        score += 1
+                    }
+                    Button("- Score") {
+                        score -= 1
+                    }
+                }
                 List{
                     NavigationLink(destination: ResultView(choice: "Tails")) {
                         Text("Choose Tails")
