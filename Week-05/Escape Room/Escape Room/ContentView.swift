@@ -12,6 +12,13 @@ struct ResultView: View {
 
     var body: some View {
         Text("You chose \(choice)")
+        if choice == "wrong. Try again and subtract 1 point."{
+            AsyncImage(url:URL(string:"https://doordesignlab.com/media/catalog/product/cache/10f/cd0/a0eaa49a31bfbbaf5c56ef47e837cd2b.png") )
+        }
+        else{
+            AsyncImage(url:URL(string:"https://cdn11.bigcommerce.com/s-zxo13b612i/images/stencil/500x659/products/710/2914/PN101_-_The_Landmark__56301.1651084422.png?c=2")
+            )
+        }
     }
 }
 
@@ -26,7 +33,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text("Welcome, \(username)")
+                Text("Welcome, \(username)!")
                 HStack {
                     Button("Log in") {
                         username = "katy"
@@ -35,36 +42,48 @@ struct ContentView: View {
                         username = "anonymous"
                     }
                 }
-                Text("Score \(score)")
+                Text("Score: \(score)")
                 HStack {
-                    Button("+ Score ") {
+                    Button("+ 1 Point ") {
                         score += 1
                     }
-                    Button("- Score") {
+                    Button("- 1 Point") {
                         score -= 1
                     }
                 }
                 List{
-                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {
                         Text("Choose Door 1")
                 }
             VStack{
-                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 2")
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 2")
                             }
             
                     }
             VStack{
-                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 3")}
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 3")}
                   }
             VStack{
-                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 4")}
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 4")}
                           }
             VStack{
                     NavigationLink(destination: ResultView(choice: "correct! Add a point to your score")) {Text("Choose Door 5")}
                           }
             VStack{
-                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 6")}
-                          }
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 6")}
+                            }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 7")}
+                            }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 8")}
+                            }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "correct! Add a point to your score")) {Text("Choose Door 9")}
+                            }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "wrong. Try again and subtract 1 point.")) {Text("Choose Door 10")}
+                            }
                     }
                 .navigationTitle("Pick a Door")
                 VStack(spacing: 30) {
