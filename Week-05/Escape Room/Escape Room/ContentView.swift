@@ -20,6 +20,7 @@ struct ContentView: View {
     @State var timeRemaining = 60
     @AppStorage("username") var username: String = "Anonymous"
     @AppStorage("score") var score:Int = 0
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -28,15 +29,15 @@ struct ContentView: View {
                 Text("Welcome, \(username)")
                 HStack {
                     Button("Log in") {
-                        username = "someone"
+                        username = "katy"
                     }
                     Button("Log out") {
-                        username = "Anonymous"
+                        username = "anonymous"
                     }
                 }
                 Text("Score \(score)")
                 HStack {
-                    Button("+ Store ") {
+                    Button("+ Score ") {
                         score += 1
                     }
                     Button("- Score") {
@@ -44,26 +45,33 @@ struct ContentView: View {
                     }
                 }
                 List{
-                    NavigationLink(destination: ResultView(choice: "Tails")) {
-                        Text("Choose Tails")
+                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {
+                        Text("Choose Door 1")
                 }
             VStack{
-                    NavigationLink(destination: ResultView(choice: "Heads")) {Text("Choose Heads")
+                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 2")
                             }
             
                     }
             VStack{
-                    NavigationLink(destination: ResultView(choice: "Heads")) {Text("Choose Heads")}
+                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 3")}
                   }
-            }
-            
-            VStack(spacing: 30) {
-                Text("...Any Door!")
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 4")}
+                          }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "correct! Add a point to your score")) {Text("Choose Door 5")}
+                          }
+            VStack{
+                    NavigationLink(destination: ResultView(choice: "wrong. Please try again")) {Text("Choose Door 6")}
+                          }
+                    }
+                .navigationTitle("Pick a Door")
+                VStack(spacing: 30) {
+                    Text("...Any Door!")
+                    }
                 }
             }
-            
-            .navigationTitle("Pick a Door")
-            
             //Text("\(timeRemaining)")
             //.font(.title)
             //.fontWeight(.heavy)
@@ -75,10 +83,9 @@ struct ContentView: View {
             // }
         }
     }
-    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
-}
+
