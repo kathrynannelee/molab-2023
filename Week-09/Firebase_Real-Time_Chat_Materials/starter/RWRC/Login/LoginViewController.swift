@@ -31,6 +31,8 @@
 /// THE SOFTWARE.
 
 import UIKit
+import FirebaseAuth
+
 
 final class LoginViewController: UIViewController {
   @IBOutlet private var actionButton: UIButton!
@@ -95,6 +97,7 @@ final class LoginViewController: UIViewController {
       showMissingNameAlert()
       return
     }
+    Auth.auth().signInAnonymously()
 
     displayNameField.resignFirstResponder()
 
