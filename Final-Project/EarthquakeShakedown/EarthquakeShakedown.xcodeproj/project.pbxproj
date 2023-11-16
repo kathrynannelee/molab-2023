@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B35C6E62B018D170009E6CC /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C6E52B018D170009E6CC /* BookwormApp.swift */; };
-		7B35C6E82B018D170009E6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C6E72B018D170009E6CC /* ContentView.swift */; };
-		7B35C6EA2B018D1A0009E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B35C6E92B018D1A0009E6CC /* Assets.xcassets */; };
-		7B35C6ED2B018D1A0009E6CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B35C6EC2B018D1A0009E6CC /* Preview Assets.xcassets */; };
-		7B35C6F52B0192DF0009E6CC /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C6F32B0192DE0009E6CC /* Bookworm.xcdatamodeld */; };
-		7B35C6F72B0193A30009E6CC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C6F62B0193A30009E6CC /* DataController.swift */; };
-		7B35C6F92B06722D0009E6CC /* EarthquakeShakedown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C6F82B06722D0009E6CC /* EarthquakeShakedown.swift */; };
+		7B35C7072B0672B70009E6CC /* EarthquakeShakedownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C7062B0672B70009E6CC /* EarthquakeShakedownApp.swift */; };
+		7B35C7092B0672B70009E6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C7082B0672B70009E6CC /* ContentView.swift */; };
+		7B35C70B2B0672BA0009E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B35C70A2B0672BA0009E6CC /* Assets.xcassets */; };
+		7B35C70E2B0672BA0009E6CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B35C70D2B0672BA0009E6CC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B35C6E22B018D170009E6CC /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B35C6E52B018D170009E6CC /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
-		7B35C6E72B018D170009E6CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7B35C6E92B018D1A0009E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B35C6EC2B018D1A0009E6CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7B35C6F42B0192DF0009E6CC /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
-		7B35C6F62B0193A30009E6CC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		7B35C6F82B06722D0009E6CC /* EarthquakeShakedown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EarthquakeShakedown.swift; path = "../../Final-Project/EarthquakeShakedown.swift"; sourceTree = "<group>"; };
+		7B35C7032B0672B70009E6CC /* EarthquakeShakedown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeShakedown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B35C7062B0672B70009E6CC /* EarthquakeShakedownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeShakedownApp.swift; sourceTree = "<group>"; };
+		7B35C7082B0672B70009E6CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B35C70A2B0672BA0009E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B35C70D2B0672BA0009E6CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B35C6DF2B018D170009E6CC /* Frameworks */ = {
+		7B35C7002B0672B70009E6CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B35C6D92B018D170009E6CC = {
+		7B35C6FA2B0672B70009E6CC = {
 			isa = PBXGroup;
 			children = (
-				7B35C6F82B06722D0009E6CC /* EarthquakeShakedown.swift */,
-				7B35C6E42B018D170009E6CC /* Bookworm */,
-				7B35C6E32B018D170009E6CC /* Products */,
+				7B35C7052B0672B70009E6CC /* EarthquakeShakedown */,
+				7B35C7042B0672B70009E6CC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7B35C6E32B018D170009E6CC /* Products */ = {
+		7B35C7042B0672B70009E6CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B35C6E22B018D170009E6CC /* Bookworm.app */,
+				7B35C7032B0672B70009E6CC /* EarthquakeShakedown.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B35C6E42B018D170009E6CC /* Bookworm */ = {
+		7B35C7052B0672B70009E6CC /* EarthquakeShakedown */ = {
 			isa = PBXGroup;
 			children = (
-				7B35C6E52B018D170009E6CC /* BookwormApp.swift */,
-				7B35C6E72B018D170009E6CC /* ContentView.swift */,
-				7B35C6F32B0192DE0009E6CC /* Bookworm.xcdatamodeld */,
-				7B35C6E92B018D1A0009E6CC /* Assets.xcassets */,
-				7B35C6EB2B018D1A0009E6CC /* Preview Content */,
-				7B35C6F62B0193A30009E6CC /* DataController.swift */,
+				7B35C7062B0672B70009E6CC /* EarthquakeShakedownApp.swift */,
+				7B35C7082B0672B70009E6CC /* ContentView.swift */,
+				7B35C70A2B0672BA0009E6CC /* Assets.xcassets */,
+				7B35C70C2B0672BA0009E6CC /* Preview Content */,
 			);
-			path = Bookworm;
+			path = EarthquakeShakedown;
 			sourceTree = "<group>";
 		};
-		7B35C6EB2B018D1A0009E6CC /* Preview Content */ = {
+		7B35C70C2B0672BA0009E6CC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7B35C6EC2B018D1A0009E6CC /* Preview Assets.xcassets */,
+				7B35C70D2B0672BA0009E6CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B35C6E12B018D170009E6CC /* Bookworm */ = {
+		7B35C7022B0672B70009E6CC /* EarthquakeShakedown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B35C6F02B018D1A0009E6CC /* Build configuration list for PBXNativeTarget "Bookworm" */;
+			buildConfigurationList = 7B35C7112B0672BA0009E6CC /* Build configuration list for PBXNativeTarget "EarthquakeShakedown" */;
 			buildPhases = (
-				7B35C6DE2B018D170009E6CC /* Sources */,
-				7B35C6DF2B018D170009E6CC /* Frameworks */,
-				7B35C6E02B018D170009E6CC /* Resources */,
+				7B35C6FF2B0672B70009E6CC /* Sources */,
+				7B35C7002B0672B70009E6CC /* Frameworks */,
+				7B35C7012B0672B70009E6CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Bookworm;
-			productName = Bookworm;
-			productReference = 7B35C6E22B018D170009E6CC /* Bookworm.app */;
+			name = EarthquakeShakedown;
+			productName = EarthquakeShakedown;
+			productReference = 7B35C7032B0672B70009E6CC /* EarthquakeShakedown.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7B35C6DA2B018D170009E6CC /* Project object */ = {
+		7B35C6FB2B0672B70009E6CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					7B35C6E12B018D170009E6CC = {
+					7B35C7022B0672B70009E6CC = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 7B35C6DD2B018D170009E6CC /* Build configuration list for PBXProject "Bookworm" */;
+			buildConfigurationList = 7B35C6FE2B0672B70009E6CC /* Build configuration list for PBXProject "EarthquakeShakedown" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 7B35C6D92B018D170009E6CC;
-			productRefGroup = 7B35C6E32B018D170009E6CC /* Products */;
+			mainGroup = 7B35C6FA2B0672B70009E6CC;
+			productRefGroup = 7B35C7042B0672B70009E6CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B35C6E12B018D170009E6CC /* Bookworm */,
+				7B35C7022B0672B70009E6CC /* EarthquakeShakedown */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B35C6E02B018D170009E6CC /* Resources */ = {
+		7B35C7012B0672B70009E6CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B35C6ED2B018D1A0009E6CC /* Preview Assets.xcassets in Resources */,
-				7B35C6EA2B018D1A0009E6CC /* Assets.xcassets in Resources */,
+				7B35C70E2B0672BA0009E6CC /* Preview Assets.xcassets in Resources */,
+				7B35C70B2B0672BA0009E6CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B35C6DE2B018D170009E6CC /* Sources */ = {
+		7B35C6FF2B0672B70009E6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B35C6E82B018D170009E6CC /* ContentView.swift in Sources */,
-				7B35C6F92B06722D0009E6CC /* EarthquakeShakedown.swift in Sources */,
-				7B35C6F72B0193A30009E6CC /* DataController.swift in Sources */,
-				7B35C6F52B0192DF0009E6CC /* Bookworm.xcdatamodeld in Sources */,
-				7B35C6E62B018D170009E6CC /* BookwormApp.swift in Sources */,
+				7B35C7092B0672B70009E6CC /* ContentView.swift in Sources */,
+				7B35C7072B0672B70009E6CC /* EarthquakeShakedownApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7B35C6EE2B018D1A0009E6CC /* Debug */ = {
+		7B35C70F2B0672BA0009E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		7B35C6EF2B018D1A0009E6CC /* Release */ = {
+		7B35C7102B0672BA0009E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,14 +259,14 @@
 			};
 			name = Release;
 		};
-		7B35C6F12B018D1A0009E6CC /* Debug */ = {
+		7B35C7122B0672BA0009E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bookworm/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EarthquakeShakedown/Preview Content\"";
 				DEVELOPMENT_TEAM = YDL9XYK959;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -292,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kathrynlee.molab.Bookworm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kathrynlee.molab.EarthquakeShakedown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		7B35C6F22B018D1A0009E6CC /* Release */ = {
+		7B35C7132B0672BA0009E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bookworm/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EarthquakeShakedown/Preview Content\"";
 				DEVELOPMENT_TEAM = YDL9XYK959;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kathrynlee.molab.Bookworm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kathrynlee.molab.EarthquakeShakedown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,38 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B35C6DD2B018D170009E6CC /* Build configuration list for PBXProject "Bookworm" */ = {
+		7B35C6FE2B0672B70009E6CC /* Build configuration list for PBXProject "EarthquakeShakedown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B35C6EE2B018D1A0009E6CC /* Debug */,
-				7B35C6EF2B018D1A0009E6CC /* Release */,
+				7B35C70F2B0672BA0009E6CC /* Debug */,
+				7B35C7102B0672BA0009E6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B35C6F02B018D1A0009E6CC /* Build configuration list for PBXNativeTarget "Bookworm" */ = {
+		7B35C7112B0672BA0009E6CC /* Build configuration list for PBXNativeTarget "EarthquakeShakedown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B35C6F12B018D1A0009E6CC /* Debug */,
-				7B35C6F22B018D1A0009E6CC /* Release */,
+				7B35C7122B0672BA0009E6CC /* Debug */,
+				7B35C7132B0672BA0009E6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7B35C6F32B0192DE0009E6CC /* Bookworm.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7B35C6F42B0192DF0009E6CC /* Bookworm.xcdatamodel */,
-			);
-			currentVersion = 7B35C6F42B0192DF0009E6CC /* Bookworm.xcdatamodel */;
-			path = Bookworm.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 7B35C6DA2B018D170009E6CC /* Project object */;
+	rootObject = 7B35C6FB2B0672B70009E6CC /* Project object */;
 }
