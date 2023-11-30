@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//base code generated using Figma's Figma to Code plugin
 struct ContentView: View {
   var body: some View {
     ZStack() {
