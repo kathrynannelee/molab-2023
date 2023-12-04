@@ -1,8 +1,7 @@
 
-  //UserProfile.swift
- // EarthquakeShakedown
-
-  //Created by Kathryn Lee on 11/29/23.
+//UserProfile.swift
+//EarthquakeShakedown
+//Created by Kathryn Lee on 11/29/23.
 
 
 import SwiftUI
