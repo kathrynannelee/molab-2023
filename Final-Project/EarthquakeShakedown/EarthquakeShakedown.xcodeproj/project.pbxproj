@@ -11,7 +11,6 @@
 		7B35C7092B0672B70009E6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C7082B0672B70009E6CC /* ContentView.swift */; };
 		7B35C70B2B0672BA0009E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B35C70A2B0672BA0009E6CC /* Assets.xcassets */; };
 		7B35C70E2B0672BA0009E6CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B35C70D2B0672BA0009E6CC /* Preview Assets.xcassets */; };
-		7B7A3D752B17C656009EF202 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A3D742B17C656009EF202 /* UserProfile.swift */; };
 		7B7A3D772B18CF03009EF202 /* CreateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A3D762B18CF03009EF202 /* CreateProfile.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		7B35C7082B0672B70009E6CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B35C70A2B0672BA0009E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B35C70D2B0672BA0009E6CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7B7A3D742B17C656009EF202 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		7B7A3D762B18CF03009EF202 /* CreateProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +55,6 @@
 			children = (
 				7B35C7062B0672B70009E6CC /* EarthquakeShakedownApp.swift */,
 				7B35C7082B0672B70009E6CC /* ContentView.swift */,
-				7B7A3D742B17C656009EF202 /* UserProfile.swift */,
 				7B7A3D762B18CF03009EF202 /* CreateProfile.swift */,
 				7B35C70A2B0672BA0009E6CC /* Assets.xcassets */,
 				7B35C70C2B0672BA0009E6CC /* Preview Content */,
@@ -145,7 +142,6 @@
 			files = (
 				7B35C7092B0672B70009E6CC /* ContentView.swift in Sources */,
 				7B35C7072B0672B70009E6CC /* EarthquakeShakedownApp.swift in Sources */,
-				7B7A3D752B17C656009EF202 /* UserProfile.swift in Sources */,
 				7B7A3D772B18CF03009EF202 /* CreateProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
