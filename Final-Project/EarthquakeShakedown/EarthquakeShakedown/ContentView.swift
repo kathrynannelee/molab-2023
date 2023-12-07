@@ -610,7 +610,7 @@ struct ContentView: View {
                         .offset(x: 0, y: -3)
                 }
                 .frame(width: 25, height: 18)
-                .offset(x: 157.50, y: -383)
+                .offset(x: 152.50, y: 381.50)
                 
                 //experiencing an earthquake right now?
                 Group {
@@ -638,85 +638,59 @@ struct ContentView: View {
                 }
                 
                 //profile
-                Group(){
-                    ZStack(){
+                Group {
+                    ZStack() {
                         Rectangle()
                             .foregroundColor(.clear)
                             .frame(width: 161, height: 59)
-                            .background(Color(red: 0.95, green: 0.86, blue: 0.75))
+                            //.background(Color(red: 0.67, green: 0.34, blue: 0.34))
                             .cornerRadius(6)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 6)
-                                    .inset(by: 0.50)
+                                    .inset(by: -0.50)
                                     .stroke(Color(red: 0.72, green: 0.60, blue: 0.42), lineWidth: 0.50)
                             )
-                            .offset(x: -0.50, y: 65.50)
+                            .offset(x: 0, y: 0)
                         HStack{
                             NavigationLink(destination: UserProfile()){Text("Profile")
                                     .font(Font.custom("Raleway", size: 26).weight(.bold))
-                                    .foregroundColor(Color(red: 0.72, green: 0.61, blue: 0.42))
-                                .offset(x: 0.50, y: 65.50)}
+                                    .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
+                                .offset(x: 1, y: 0)}
                         }
                     }
+                    .frame(width: 163, height: 90)
+                    .offset(x: -0.50, y: 60.00)
                 }
                 
                 //tracker
-                Rectangle()
-                    .foregroundColor(.clear)
-                    .frame(width: 161, height: 59)
-                    .background(Color(red: 0.95, green: 0.86, blue: 0.75))
-                    .cornerRadius(6)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .inset(by: 0.50)
-                            .stroke(Color(red: 0.72, green: 0.60, blue: 0.42), lineWidth: 0.50)
-                    )
-                    .offset(x: 0.50, y: 175.50)
-                VStack{
-                    NavigationLink(destination: Tracker()){Text("Tracker")
-                            .font(Font.custom("Raleway", size: 26).weight(.bold))
-                            .foregroundColor(Color(red: 0.72, green: 0.61, blue: 0.42))
-                        .offset(x: 0, y: 175.50)}
+                Group {
+                    ZStack() {
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 161, height: 59)
+                            //.background(Color(red: 0.67, green: 0.34, blue: 0.34))
+                            .cornerRadius(6)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 6)
+                                    .inset(by: -0.50)
+                                    .stroke(Color(red: 0.72, green: 0.60, blue: 0.42), lineWidth: 0.50)
+                            )
+                            .offset(x: 0, y: 0)
+                        HStack{
+                            NavigationLink(destination: Tracker()){Text("Tracker")
+                                    .font(Font.custom("Raleway", size: 26).weight(.bold))
+                                    .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
+                                .offset(x: 1, y: 0)}
+                        }
+                    }
+                    .frame(width: 163, height: 90)
+                    .offset(x: 0, y: 175.50)
                 }
-                ZStack() {
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 25, height: 0)
-                        .overlay(
-                            Rectangle()
-                                .stroke(Color(red: 0.95, green: 0.86, blue: 0.75), lineWidth: 0.50)
-                        )
-                        .offset(x: 0, y: -9)
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 25, height: 0)
-                        .overlay(
-                            Rectangle()
-                                .stroke(Color(red: 0.95, green: 0.86, blue: 0.75), lineWidth: 0.50)
-                        )
-                        .offset(x: 0, y: 0)
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 25, height: 0)
-                        .overlay(
-                            Rectangle()
-                                .stroke(Color(red: 0.95, green: 0.86, blue: 0.75), lineWidth: 0.50)
-                        )
-                        .offset(x: 0, y: 9)
-                    
-                    .frame(width: 45, height: 45)
-                    .offset(x: 152.50, y: 381.50)
-                    
-                }
-                }
-                Group(){
-                    
             }
-              
-          }
-          .frame(width: 390, height: 844)
-          .background(Color(red: 0.95, green: 0.86, blue: 0.75));
         }
+        .frame(width: 390, height: 844)
+        .background(Color(red: 0.948, green: 0.86, blue: 0.748));
+    }
   }
 }
 
