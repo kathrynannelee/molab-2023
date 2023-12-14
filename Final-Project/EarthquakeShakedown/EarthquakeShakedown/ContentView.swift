@@ -250,7 +250,6 @@ struct ExperiencingAnEarthquake: View {
 
 struct UserProfile: View {
     var body: some View {
-        ScrollView{
             ZStack() {
                 Group {
                     ZStack() {
@@ -314,59 +313,48 @@ struct UserProfile: View {
                     .offset(x: 157.50, y: -380)
                     Text("Name: Vorem Ipsum")
                         .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                        .offset(x: -54.50, y: -109)
+                        .foregroundColor(Color(red: 0.41, green: 0.51, blue: 0.41))
+                        .offset(x: -59.50, y: -125)
+                    Text("Email: boremipsum@gmail.com")
+                        .font(Font.custom("Lato", size: 18).weight(.light))
+                        .foregroundColor(Color(red: 0.41, green: 0.51, blue: 0.41))
+                        .offset(x: -13.50, y: -75)
                     Text("Birthdate: 01/01/2001")
                         .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                        .offset(x: -42.50, y: -17)
+                        .foregroundColor(Color(red: 0.41, green: 0.51, blue: 0.41))
+                        .offset(x: -54.50, y: -21)
                     Text("Current Location: San Francisco, CA")
                         .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
+                        .foregroundColor(Color(red: 0.41, green: 0.51, blue: 0.41))
                         .offset(x: 6, y: 29)
-                    Text("Email: boremipsum@gmail.com ")
-                        .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                        .offset(x: -13.50, y: -63)
+                   
                 }
                 Group {
                     ZStack() {
                         Ellipse()
                             .foregroundColor(.clear)
-                            .frame(width: 45, height: 45)
+                            .frame(width: 45, height: 68)
                             .background(Color(red: 0.67, green: 0.34, blue: 0.34))
                             .offset(x: 0, y: 0)
-                        Text("?")
-                            .font(Font.custom("Raleway", size: 30).weight(.bold))
-                            .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                            .offset(x: 0, y: -3)
+                        HStack{
+                            NavigationLink(destination: HelpFaq()){Text("?")
+                                    .font(Font.custom("Raleway", size: 30).weight(.bold))
+                                    .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
+                                .offset(x: 1, y: -9)}
+                        }
                     }
                     .frame(width: 45, height: 45)
                     .offset(x: 154.50, y: 381.50)
-                    Text("New User? Create an Account")
-                        .font(Font.custom("Lato", size: 16).weight(.light))
-                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                        .offset(x: -53.50, y: -160.50)
+//                    Text("New User? Create an Account")
+//                        .font(Font.custom("Lato", size: 16).weight(.light))
+//                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
+//                        .offset(x: -53.50, y: -160.50)
                     Text("edit")
                         .font(Font.custom("Lato", size: 16).weight(.light))
-                        .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
+                        .foregroundColor(Color(red: 0.41, green: 0.51, blue: 0.41))
                         .offset(x: 127.50, y: -185.50)
                     ZStack() {
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(width: 290, height: 25)
-                            .background(Color(red: 0.67, green: 0.34, blue: 0.34))
-                            .cornerRadius(6)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 6)
-                                    .inset(by: -0.50)
-                                    .stroke(Color(red: 0.72, green: 0.60, blue: 0.42), lineWidth: 0.50)
-                            )
-                            .offset(x: 0, y: 0)
-                        Text("Experiencing an earthquake right now?")
-                            .font(Font.custom("Raleway", size: 14).weight(.bold))
-                            .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                            .offset(x: 0, y: 0)
+                        
                     }
                     .frame(width: 290, height: 25)
                     .offset(x: -30, y: 384.50)
@@ -374,14 +362,14 @@ struct UserProfile: View {
                         .foregroundColor(.clear)
                         .frame(width: 103, height: 100)
                         .background(
-                            AsyncImage(url: URL(string: "https://via.placeholder.com/103x100"))
+                            Image("star")
                         )
                         .offset(x: -106.50, y: 176)
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 86, height: 88)
                         .background(
-                            AsyncImage(url: URL(string: "https://via.placeholder.com/86x88"))
+                            Image("backpack")
                         )
                         .cornerRadius(560)
                         .offset(x: 4, y: 180)
@@ -389,14 +377,14 @@ struct UserProfile: View {
                         .foregroundColor(.clear)
                         .frame(width: 95, height: 91)
                         .background(
-                            AsyncImage(url: URL(string: "https://via.placeholder.com/95x91"))
+                            Image("prep")
                         )
                         .offset(x: -110.50, y: 277.50)
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 78, height: 78)
                         .background(
-                            AsyncImage(url: URL(string: "https://via.placeholder.com/78x78"))
+                            Image("announcements")
                         )
                         .cornerRadius(14)
                         .offset(x: 7, y: 284)
@@ -406,32 +394,11 @@ struct UserProfile: View {
             .background(Color(red: 0.95, green: 0.86, blue: 0.75));
         }
     }
-}
 
 struct Tracker: View {
     var body: some View {
-        ScrollView{
             ZStack() {
                 Group {
-                    ZStack() {
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(width: 290, height: 25)
-                            .background(Color(red: 0.67, green: 0.34, blue: 0.34))
-                            .cornerRadius(6)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 6)
-                                    .inset(by: -0.50)
-                                    .stroke(Color(red: 0.72, green: 0.60, blue: 0.42), lineWidth: 0.50)
-                            )
-                            .offset(x: 0, y: 0)
-                        Text("Experiencing an earthquake right now?")
-                            .font(Font.custom("Raleway", size: 14).weight(.bold))
-                            .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                            .offset(x: 0, y: 0)
-                    }
-                    .frame(width: 290, height: 25)
-                    .offset(x: -34, y: 378.50)
                     Text("Earthquake Tracker")
                         .font(Font.custom("Raleway", size: 26).weight(.bold))
                         .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
@@ -597,7 +564,7 @@ struct Tracker: View {
             .background(Color(red: 0.95, green: 0.86, blue: 0.75));
         }
     }
-}
+
 
 struct HelpFaq: View {
     var body: some View {
@@ -611,68 +578,58 @@ struct HelpFaq: View {
                     Text("What is this application?")
                         .font(Font.custom("Raleway", size: 26).weight(.bold))
                         .foregroundColor(Color(red: 0.67, green: 0.34, blue: 0.34))
-                        .offset(x: -12, y: -316)
+                        .offset(x: -12, y: -450)
                     Text("Earthquake Shakedown is a tool designed to help students complete a comprehensive education on earthquake preparedness through learning modules and resources before, during, and after an earthquake.")
                         .font(Font.custom("Lato", size: 18).weight(.light))
                         .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
-                        .offset(x: 4, y: -221.50)
-                    Text("Why create an account?")
-                        .font(Font.custom("Raleway", size: 26).weight(.bold))
-                        .foregroundColor(Color(red: 0.67, green: 0.34, blue: 0.34))
-                        .offset(x: -14.50, y: -113)
-                    Text("Creating a profile helps customize your learning experience and saves your badges and progress on learning modules across all devices.")
-                        .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
-                        .offset(x: 1, y: -46.50)
-                    Text("Learning benefits?")
-                        .font(Font.custom("Raleway", size: 26).weight(.bold))
-                        .foregroundColor(Color(red: 0.67, green: 0.34, blue: 0.34))
-                        .offset(x: -50, y: 39)
-                    Text("By breaking down different steps of learning and preparing for earthquakes, users have the chance to learn at their own pace and review specific lessons if needed easily.")
-                        .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
-                        .offset(x: 1, y: 121.50)
+                        .offset(x: 4, y: -361.50)
+                        .frame(
+                                minWidth: 0,
+                                maxWidth: 300,
+                                alignment: .topLeading
+                            )
                     Text("Does my progress save?")
                         .font(Font.custom("Raleway", size: 26).weight(.bold))
                         .foregroundColor(Color(red: 0.67, green: 0.34, blue: 0.34))
-                        .offset(x: -16.50, y: 519)
+                        .offset(x: -16.50, y: -250)
                 }
                 Group {
                     Text("Yes! Your progress can be saved if you log into your profile. ")
                         .font(Font.custom("Lato", size: 18).weight(.light))
                         .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
-                        .offset(x: 5, y: 563.50)
+                        .offset(x: 5, y: -206.50)
+                        .frame(
+                            minWidth: 0,
+                            maxWidth: 300,
+                            alignment: .topLeading
+                        )
                     Text("What does the tracker do?")
                         .font(Font.custom("Raleway", size: 26).weight(.bold))
                         .foregroundColor(Color(red: 0.67, green: 0.34, blue: 0.34))
-                        .offset(x: -1.50, y: 215)
+                        .offset(x: -1.50, y: -145)
                     Text("The tracker uses your location inputted in your profile to note any recent earthquakes that occurred in the area in the past two weeks, pinpointing the epicenter and magnitude.")
                         .font(Font.custom("Lato", size: 18).weight(.light))
                         .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
-                        .offset(x: 4, y: 292.50)
+                        .offset(x: 4, y: -62.50)
+                        .frame(
+                            minWidth: 0,
+                            maxWidth: 300,
+                            alignment: .topLeading
+                        )
+                    
                     Text("How do I earn badges?")
                         .font(Font.custom("Raleway", size: 26).weight(.bold))
                         .foregroundColor(Color(red: 0.67, green: 0.34, blue: 0.34))
-                        .offset(x: -24.50, y: 389)
-                    ZStack() {
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(width: 290, height: 25)
-                            .background(Color(red: 0.67, green: 0.34, blue: 0.34))
-                            .cornerRadius(6)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 6)
-                                    .inset(by: -0.50)
-                                    .stroke(Color(red: 0.72, green: 0.60, blue: 0.42), lineWidth: 0.50)
-                            )
-                            .offset(x: 0, y: 0)
-                        Text("Experiencing an earthquake right now?")
-                            .font(Font.custom("Raleway", size: 14).weight(.bold))
-                            .foregroundColor(Color(red: 0.95, green: 0.86, blue: 0.75))
-                            .offset(x: 0, y: 0)
-                    }
-                    .frame(width: 290, height: 25)
-                    .offset(x: -6, y: 657)
+                        .offset(x: -24.50, y: 35)
+                    Text("By exploring different aspects of the app, you can earn badges pertaining to the topic and can show them off on their profile!")
+                        .font(Font.custom("Lato", size: 18).weight(.light))
+                        .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
+                        .offset(x: 6, y: 95)
+                        .frame(
+                            minWidth: 0,
+                            maxWidth: 300,
+                            alignment: .topLeading
+                        )
                     ZStack() {
                         Rectangle()
                             .foregroundColor(.clear)
@@ -696,10 +653,7 @@ struct HelpFaq: View {
                     .frame(width: 222.94, height: 83)
                     .offset(x: -15.53, y: -619)
                      
-                    Text("With each lesson completed, users earn a unique badge pertaining to the topic and can show them off on their profile!")
-                        .font(Font.custom("Lato", size: 18).weight(.light))
-                        .foregroundColor(Color(red: 0.72, green: 0.60, blue: 0.42))
-                        .offset(x: 6, y: 444.50)
+
                     ZStack() {
                         Rectangle()
                             .foregroundColor(.clear)
